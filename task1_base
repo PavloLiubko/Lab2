@@ -1,0 +1,30 @@
+#include <iostream>
+#include <cmath>
+
+
+int main()
+{
+    setlocale(LC_ALL, "RU"); // українського кодування на жаль не знйшов 
+
+    int A, B, C;
+    
+    std::cout << "Введіть значення катета А: \n";
+    std::cin >> A;
+    std::cout << "\n";
+
+    std::cout << "Введіть значення катета B: \n";
+    std::cin >> B;
+    std::cout << "\n";
+
+    std::cout << "Введіть значення катета С: \n";
+    std::cin >> C;
+    std::cout << "\n";
+
+    A = B;
+    B = C;
+    C = A;
+
+    std::cout << "А =" << A << "\n" << "B =" << B << "\n" << "C =" << C;
+
+    return 0;
+}
