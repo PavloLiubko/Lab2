@@ -24,6 +24,7 @@ int main()
 
     std::cout << "Гіпотенуза =" << C;
 
+    return 0;
 
 }
 
