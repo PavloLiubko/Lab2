@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>
+
+
+int main()
+{
+    setlocale(LC_ALL, "RU"); // українського кодування на жаль не знайшов 
+
+    int h, r;
+
+    std::cout << "Введи значення висоти: \n";
+    std::cin >> h;
+    std::cout << "\n";
+    std::cout << "Введи значення радіусу: \n";
+    std::cin >> r;
+    std::cout << "\n";
+
+    const double PI = 3.14159;
+    double V = PI * pow(r, 2) * h;
+    double S = 2 * PI * r * (h + r);
+
+    std::cout << " Значення об'єму циліндра:" << V << "\n" << "Значення площі циліндра:" << S;
+    return 0;
+}
