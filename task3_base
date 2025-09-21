@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cmath>
+
+
+int main()
+{
+    setlocale(LC_ALL, "RU"); // українського кодування на жаль не знйшов 
+
+    int A;
+    std::cout << "Введіть довжину ребра куба:";
+    std::cin >> A;
+    int V = pow(A, 3);
+    int S = 6 * pow(A, 2);
+
+    std::cout << "Об'єм вашого куба:" << V << "\n" << "Площа вашого куба:" << S;
+
+    return 0;
+}
