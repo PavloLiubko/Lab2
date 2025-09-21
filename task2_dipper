@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+
+
+int main()
+{
+    setlocale(LC_ALL, "RU"); // українського кодування на жаль не знайшов 
+
+    int a, b;
+    std::cout << "Введіть заначення а:";
+    std::cin >> a;
+    std::cout << "Введіть заначення b:";
+    std::cin >> b;
+
+    float sa, sg;
+    sa = (a + b) / 2;
+    sg = sqrt(a * b);
+
+    std::cout << "Значення середнього середнього арифметичного ваших чисел = " << sa << "\n" << "Значення середнього геометричного ваших чисел - " << sg;
+
+    return 0;
+}
