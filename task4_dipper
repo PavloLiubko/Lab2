@@ -1,0 +1,35 @@
+#include <iostream>
+#include <cmath>
+
+
+int main()
+{
+    setlocale(LC_ALL, "RU"); // українського кодування на жаль не знайшов 
+
+    std::cout << "Курс валют(Одиниця - Гривня): \n" << "USD = 41 \n" << "EUR = 49 \n" << "PLN = 11" << "BTC = 4779973 \n";
+
+    std::string currency;
+    float amount;
+    std::cout << "Вкажіть яку валюту ви бажаєте отримати(USD/EUR/PLN/BTC):";
+    std::cin >> currency;
+    std::cout << "Вкажіть скільки валюти ви бажаєте обміняти:";
+    std::cin >> amount;
+
+    if (currency == "USD") {
+        std::cout << "Ось скільки " << currency << " ви отримаєте за свої гривні:" << amount / 41;
+    }
+    else if (currency == "EUR") {
+        std::cout << "Ось скільки " << currency << " ви отримаєте за свої гривні:" << amount / 49;
+    }
+    else if (currency == "PLN") {
+        std::cout << "Ось скільки " << currency << " ви отримаєте за свої гривні:" << amount / 11;
+    }
+    else if (currency == "BTC") {
+        std::cout << "Ось скільки " << currency << " ви отримаєте за свої гривні:" << amount / 4779973;
+    }
+    else {
+        std::cout << "Вибачте, але ми не обмінюєм таку валюту";
+    }
+
+    return 0;
+}
