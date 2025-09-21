@@ -1,0 +1,29 @@
+#include <iostream>
+#include <cmath>
+
+
+int main()
+{
+    setlocale(LC_ALL, "RU"); // українського кодування на жаль не знйшов 
+
+    // base 1
+
+    int A, B, C;
+    
+    std::cout << "Введіть значення катета А: \n";
+    std::cin >> A;
+    std::cout << "\n";
+
+    std::cout << "Введіть значення катета B: \n";
+    std::cin >> B;
+    std::cout << "\n";
+
+    std::cout << "Згідно теореми Піфагора: C^2 = A^2 + B^2 \n";
+
+    C = sqrt(pow(A, 2) + pow(B, 2));
+
+    std::cout << "Гіпотенуза =" << C;
+
+
+}
+
